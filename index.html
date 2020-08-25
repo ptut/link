@@ -26,9 +26,12 @@
 	Please Wait...
 	
 	<script>
+		let linkList = {
+			ukg20_OC: "https://docs.google.com/spreadsheets/d/1cqURKbpO1uReXLZSZrtY7SP0QRWhFOrvGe9ov_RsxcE/edit?usp=sharing"
+		}
 		let ploc = window.location.href;
 		let pcode = ploc.substr(ploc.indexOf("#") + 1);
-		console.log(pcode);
+		console.log(linkList[pcode]);
 	</script>
 </body>
 
