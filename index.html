@@ -31,7 +31,9 @@
 		}
 		let ploc = window.location.href;
 		let pcode = ploc.substr(ploc.indexOf("#") + 1);
-		console.log(linkList[pcode], pcode, linkList);
+		let linkLoc = linkList[pcode];
+		console.log(linkLoc, pcode, linkList);
+		setTimeout(function(){ window.location.href = linkLoc; }, 5000);
 	</script>
 </body>
 
